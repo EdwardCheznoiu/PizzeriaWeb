@@ -1,0 +1,11 @@
+<?php
+include '../Objects/User.php';
+
+class SignupController
+{
+    $user = new User();
+    public function __construct()
+    {
+
+    }
+}

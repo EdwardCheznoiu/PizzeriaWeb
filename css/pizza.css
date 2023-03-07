@@ -1,0 +1,146 @@
+ 
+body{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+
+
+a{
+	text-decoration: none;
+}
+
+
+.main-content{
+    width: 80%;
+	min-height: 80vh;
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	margin: auto;
+}
+
+.main-name{
+	width: 85%;
+	margin: auto;
+	margin-bottom: 10px;
+	 
+}
+
+.main-name h1{
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 5px;
+	color: #171616;
+	text-decoration: underline;
+	text-decoration-color: #5F9446;
+}
+
+
+@media only screen and (max-width: 890px){
+	.main-content{
+		 
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	}
+}
+ 
+
+
+.box-content{
+     
+	height: 400px; 
+	background-color: #fff;
+	margin: 10px; 
+	box-shadow:  9px 9px 18px #9b9b9b, 
+             -9px -9px 18px #ffffff;
+		        
+	border-radius: 5px;
+	transition: .3s;
+	overflow:hidden;
+	 
+	 
+}
+
+.image-container{
+	width: 100%; 
+	height: 55%;
+	overflow: hidden;
+}
+
+.image-container img{
+	width: 100%; 
+	height: 100%;
+	border: 1px solid  #5F9446;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+}
+
+
+.title-c{
+	height: auto;
+	width: 100%; 
+	text-align: center;
+	margin-top: 20px;
+	word-wrap: break-word;
+}
+
+.title-c h2{
+	 
+	font-weight: bold;
+	color: #E52D32;
+	cursor: pointer;
+}
+
+.price{
+	margin-top: 20px;
+}
+
+.price h1{
+	font-size: 30px; 
+	color: #5F9446;
+	text-align: center;
+}
+
+.title-c:hover{
+	text-decoration: underline;
+	text-decoration-color: #368F00;
+}
+
+.product{
+	margin: 20px auto ; 
+	background-color: #9b663d;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 60%;
+	
+}
+
+.product p{
+	font-size: 20px; 
+	color: #fff;
+	text-align: center;
+	 
+}
+
+.info-box{
+	  
+	width: 100%; 
+	height: 100%; 
+	margin: auto;
+	color: #fff;
+	font-size: 19px;
+	letter-spacing: 2px;
+	background-color: rgba(107,38,39,.9);
+    transform: translateY(100%);
+	 
+	transition: .5s;
+	
+}
+
+.info-box-active{
+	transform: translateY(-100%);
+}
+
+ 
